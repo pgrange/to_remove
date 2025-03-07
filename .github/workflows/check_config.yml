@@ -8,6 +8,11 @@ on:
 jobs:
   configure:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: read
+      pull-requests: write
+      repository-projects: read
     steps:
       - name: Configurer les paramètres du dépôt
         env:
